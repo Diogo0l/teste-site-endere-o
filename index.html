@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca de CEP com Mapa</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Substitua "SUA_CHAVE_GOOGLE_MAPS" pela sua chave da API do Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=SUA_CHAVE_GOOGLE_MAPS&callback=initMap" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Busca de CEP com Mapa</h1>
+        <form id="cep-form">
+            <label for="cep">Digite seu CEP:</label>
+            <input type="text" id="cep" name="cep" placeholder="Ex: 12229-891" required>
+            <button type="submit">Buscar</button>
+        </form>
+        <div id="endereco">
+            <!-- Endereços serão exibidos aqui -->
+        </div>
+        <div id="map"></div>
+    </div>
+</body>
+</html>
